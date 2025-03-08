@@ -1,0 +1,36 @@
+name: Generate PDF from Markdown
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Pandoc and TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-extra
+
+      - name: Combine Markdown files
+        run: |
+          cat docs/*.md > combined.md
+
+      - name: Convert to PDF
+        run: |
+          pandoc combined.md --toc --pdf-engine=xelatex -o aws-certified-cloud-practitioner-manual.pdf
+
+      - name: Commit PDF to repository
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add aws-certified-cloud-practitioner-manual.pdf
+          git commit -m "Auto-generated PDF from Markdown files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
