@@ -16,7 +16,7 @@ This repository contains a comprehensive summary and study guide for the AWS Cer
 Clone this repository and explore the `docs/` folder for detailed notes. 
 
 ## Download the Full Manual
-Download the complete AWS Certified Cloud Practitioner Manual as a [PDF file](aws-certified-cloud-practitioner-manual.pdf).
+Download the complete AWS Certified Cloud Practitioner Manual as a [PDF file] (https://github.com/cdk7/aws-certified-cloud-practitioner-prep/raw/main/docs/pdf/documentation.pdf)
 
 ## License
 This project is licensed under the MIT License—see [LICENSE](LICENSE) for details.
