@@ -18,5 +18,8 @@ Clone this repository and explore the `docs/` folder for detailed notes.
 ## Download the Full Manual
 Download the complete AWS Certified Cloud Practitioner Manual as a [PDF file](https://github.com/cdk7/aws-certified-cloud-practitioner-prep/raw/main/docs/pdf/aws-certified-cloud-practitioner-prep.pdf) .
 
+## IMPORTANT
+You can find more than 700 questions [https://github.com/cdk7/aws-certified-cloud-practitioner-prep/tree/main/exam_prep/aws_clf-c02_questions.xlsx] of AWS certified cloud practitioner examination to practice!  
+
 ## License
 This project is licensed under the MIT License—see [LICENSE](LICENSE) for details.
